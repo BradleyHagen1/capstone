@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "movies",
+    "picture": "activity1_img",
+    "votes": 0
+  },
+
+  {
+    "id": 2,
+    "name": "axe throwing",
+    "picture": "activity2_img",
+    "votes": 0
+  },
+
+  {
+    "id": 3,
+    "name": "arcade",
+    "picture": "activity3_img",
+    "votes": 0
+  },
+
+  {
+
+  }
+]
