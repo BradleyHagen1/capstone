@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Activity Duck</title>
+  </head>
+  <body>
+    <header>
+       <h1>Welcome to Activity Duck</h1>
+    </header>
+    <main>
+        <img src="https://cdn11.bigcommerce.com/s-nf2x4/images/stencil/1280x1280/products/2038/18166/lilalu-quietscheente-backpacker-rubber-duck-HR__42803.1669065044.png?c=2" alt="backpacking rubber duck">
+        
+        <h3>Ask the duck what you should do</h3>
+        <section id="activityDisplay"></section>
 
-</head>
-<body>
-    
+        <section id="suggestionBox">
+            <h3>Add an activity!</h3>
+            
+            <input type="text" placeholder="Activity Name" id="activityName">
+            <input type="text" placeholder="Activity Picture" id="activityPicture">
+            <button id="addActivity">Submit</button>
+        </section>
 
-</body>
+    </main>
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
