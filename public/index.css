@@ -5,15 +5,33 @@ body {
   background-color: rgb(15, 166, 166);
 }
 
+.duck{
+  margin: 0 auto;
+}
+
+.ask {
+  text-align: center;
+}
+
 img {
   height: 300px;
   display: flex;
   justify-content: center;
- 
+   
 }
 
 #activityDisplay {
   display: flex;
-  gap: 50px;
+  flex-wrap: wrap;
 }
 
+.activity-card {
+box-sizing: border-box;
+  padding: 0 25px;
+  width: 33%;
+
+}
+
+.activity-picture {
+  width: 100%;
+}

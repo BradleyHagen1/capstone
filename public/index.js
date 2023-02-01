@@ -9,7 +9,7 @@ const createActivityCard = (activity) => {
   newActivityCard.classList.add("activity-card");
 
   newActivityCard.innerHTML = `
-        <img alt='activity picture' src= ${activity.picture}/>
+        <img class='activity-picture' alt='activity picture' src= ${activity.picture}/>
         <p>${activity.name}</p>
 
         <section>
