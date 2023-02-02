@@ -2,22 +2,43 @@
   {
     "id": 1,
     "name": "Movies",
-    "picture": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW92aWUlMjB0aGVhdGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    "votes": 0
+    "picture": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW92aWUlMjB0aGVhdGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    
   },
 
   {
     "id": 2,
     "name": "Axe Throwing",
-    "picture": "https://images.unsplash.com/photo-1545476745-9211a9e7cca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YXhlJTIwdGhyb3dpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    "votes": 0
+    "picture": "https://images.unsplash.com/photo-1545476745-9211a9e7cca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YXhlJTIwdGhyb3dpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    
   },
 
   {
     "id": 3,
     "name": "Arcade",
-    "picture": "https://images.squarespace-cdn.com/content/v1/5a8a22c59f8dce86ccc25373/54f77f4e-a24c-4906-8a04-859fc7e3c5a0/AM+LKM+Opening-34.jpg",
-    "votes": 0
+    "picture": "https://images.squarespace-cdn.com/content/v1/5a8a22c59f8dce86ccc25373/54f77f4e-a24c-4906-8a04-859fc7e3c5a0/AM+LKM+Opening-34.jpg"
+    
+  },
+
+  {
+    "id": 4,
+    "name": "Golf",
+    "picture": "https://images.unsplash.com/photo-1584837140804-599306fb37f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z29sZnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+
+  },
+
+  {
+    "id": 5,
+    "name": "Bowling",
+    "picture": "https://images.unsplash.com/photo-1614713568397-b31b779d0498?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym93bGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+
+  },
+
+  {
+    "id": 6,
+    "name": "Archery",
+    "picture": "https://images.unsplash.com/photo-1538432091670-e6b79bd9bffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFyY2hlcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+
   }
 
 ]

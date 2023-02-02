@@ -115,5 +115,5 @@ function duckButton() {
 
 duckBtn.addEventListener("click", duckButton);
 
-// addNewActivity.addEventListener("click", addActivity);
+addNewActivity.addEventListener("click", addActivity);
 getAllActivity();
