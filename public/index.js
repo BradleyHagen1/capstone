@@ -4,32 +4,34 @@ const activityDisplay = document.querySelector("#activityDisplay");
 
 const addNewActivity = document.querySelector("#addActivity");
 
+const cardArray = []
+
 const createActivityCard = (activity) => {
   const newActivityCard = document.createElement("section");
   newActivityCard.classList.add("activity-card");
 
   newActivityCard.innerHTML = `
+      <div style="visibility: hidden" id="activity${activity.id}">
         <img class='activity-picture' alt='activity picture' src= ${activity.picture}/>
         <p>${activity.name}</p>
 
-        <section>
-            <button onclick="updateActivity(${activity.id}, 'downvote')">Down</button>
-            Popularity: ${activity.votes}
-            <button onclick="updateActivity(${activity.id}, 'upvote')">Up</button>
-        </section>
-
-        <br>
         <br>
 
-        <button onclick="deleteActivity(${activity.id})">Delete Me</button> 
+        <button onclick="deleteActivity(${activity.id})">Delete</button> 
         <br>
         <br>
+      </div>
     `;
+    newActivityCard.visiblity = false;
+    newActivityCard.id = activity.id;
+    console.log(newActivityCard)
+    cardArray.push(newActivityCard);
   activityDisplay.appendChild(newActivityCard);
 };
 
 const activityDisplayAll = (arr) => {
   for (let i = 0; i < arr.length; i++) {
+    arr[i].visibility= false;
     createActivityCard(arr[i]);
   }
 };
@@ -38,7 +40,7 @@ const getAllActivity = () => {
   axios
     .get(`${baseUrl}/activity`)
     .then((response) => {
-      console.log(response.data);
+    
       activityDisplayAll(response.data);
     })
     .catch((err) => {
@@ -47,16 +49,10 @@ const getAllActivity = () => {
 };
 
 const deleteActivity = (id) => {
-  axios
-    .delete(`${baseUrl}/activity/${id}`)
-    .then((response) => {
-      console.log(response.data);
-      activityDisplay.innerHTML = ``;
-      activityDisplayAll(response.data);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  let el =  document.getElementById(`activity${id}`);
+  el.style.visibility = 'hidden';
+  el.parentNode.removeChild(el);
+
 };
 
 const addActivity = () => {
@@ -73,7 +69,7 @@ const addActivity = () => {
   axios
     .post(`${baseUrl}/activity`, bodyObj)
     .then((response) => {
-      console.log(response.data);
+      
       activityDisplayAll(response.data);
 
       name.value = "";
@@ -93,7 +89,7 @@ const updateActivity = (id, type) => {
   axios
     .put(`${baseUrl}/activity/${id}`, bodyObj)
     .then((response) => {
-      console.log(response.data);
+    
       activityDisplay.innerHTML = ``;
       activityDisplayAll(response.data);
     })
@@ -102,5 +98,22 @@ const updateActivity = (id, type) => {
     });
 };
 
-addNewActivity.addEventListener("click", addActivity);
+
+
+function duckButton() {
+  let count = 0;
+  cardArray.forEach(card => {
+    if (!card.visiblity && count < 1){
+        card.visiblity = true; 
+       let el =  document.getElementById(`activity${card.id}`);
+       el.style.visibility = 'visible';
+        count++;
+    }
+  });
+
+}
+
+duckBtn.addEventListener("click", duckButton);
+
+// addNewActivity.addEventListener("click", addActivity);
 getAllActivity();
