@@ -123,6 +123,3 @@ duckBtn.addEventListener("click", duckButton);
 addNewActivity.addEventListener("click", addActivity);
 
 getAllActivity();
-
-
-
