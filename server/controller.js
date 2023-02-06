@@ -1,9 +1,10 @@
 let activity = require("./db.json");
 
-let globalId = 4;
+let globalId = 7;
 
 module.exports = {
   getActivity: (request, response) => {
+    
     response.status(200).send(activity);
   },
 

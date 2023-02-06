@@ -4,7 +4,8 @@ const activityDisplay = document.querySelector("#activityDisplay");
 
 const addNewActivity = document.querySelector("#addActivity");
 
-const cardArray = []
+const cardArray = [];
+
 
 const createActivityCard = (activity) => {
   const newActivityCard = document.createElement("section");
@@ -27,6 +28,7 @@ const createActivityCard = (activity) => {
     console.log(newActivityCard)
     cardArray.push(newActivityCard);
   activityDisplay.appendChild(newActivityCard);
+  
 };
 
 const activityDisplayAll = (arr) => {
@@ -56,6 +58,7 @@ const deleteActivity = (id) => {
 };
 
 const addActivity = () => {
+
   activityDisplay.innerHTML = "";
 
   const name = document.querySelector("#activityName");
@@ -101,6 +104,7 @@ const updateActivity = (id, type) => {
 
 
 function duckButton() {
+  
   let count = 0;
   cardArray.forEach(card => {
     if (!card.visiblity && count < 1){
@@ -110,10 +114,15 @@ function duckButton() {
         count++;
     }
   });
-
+ 
 }
+
 
 duckBtn.addEventListener("click", duckButton);
 
 addNewActivity.addEventListener("click", addActivity);
+
 getAllActivity();
+
+
+

@@ -9,29 +9,35 @@
   </head>
   <body>
     <header>
-       <h1>Welcome to Activity Duck</h1>
+      <h1>Welcome to Activity Duck</h1>
     </header>
     <main>
       <div class="duck">
-      <button id="duckBtn">
-      <img src="https://cdn11.bigcommerce.com/s-nf2x4/images/stencil/1280x1280/products/2038/18166/lilalu-quietscheente-backpacker-rubber-duck-HR__42803.1669065044.png?c=2" alt="backpacking rubber duck">
-      </button>  
-    </div>
-        <h2 class="ask">Ask the duck what you should do</h2>
-        <br>
-        <section id="activityDisplay"></section>
+        <button id="duckBtn" type="button">
+          <img
+            src="https://cdn11.bigcommerce.com/s-nf2x4/images/stencil/1280x1280/products/2038/18166/lilalu-quietscheente-backpacker-rubber-duck-HR__42803.1669065044.png?c=2"
+            alt="backpacking rubber duck"
+          />
+        </button>
+      </div>
+      <h2 class="ask">Click the duck for activity ideas</h2>
+      <br />
+      <section id="activityDisplay"></section>
 
-        <section id="suggestionBox">
-            <h3>Add an activity!</h3>
-            
-            <input type="text" placeholder="Activity Name" id="activityName">
-            <input type="text" placeholder="Activity Picture" id="activityPicture">
-            <button id="addActivity">Submit</button>
-        </section>
+      <section id="suggestionBox">
+        <h3>Add an activity!</h3>
 
+        <input type="text" placeholder="Activity Name" id="activityName" />
+        <input
+          type="text"
+          placeholder="Activity Picture (URL)"
+          id="activityPicture"
+        />
+        <form>
+        <button id="addActivity" type="submit">Submit</button>
+        </form>
+      </section>
     </main>
-
-
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
